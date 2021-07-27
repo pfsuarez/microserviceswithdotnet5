@@ -1,4 +1,4 @@
-namespace Play.Catalog.Service.Settings
+namespace Play.Common.Settings
 {
     public class MongoDbSettings
     {
@@ -6,5 +6,10 @@ namespace Play.Catalog.Service.Settings
         public int Port { get; init; }
 
         public string ConnectionString => $"mongodb://{Host}:{Port}";
+
+        public int GetInte()
+        {
+            return 3;
+        }
     }
 }
