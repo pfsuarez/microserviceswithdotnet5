@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+        "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -23,7 +23,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+        "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -36,7 +36,7 @@
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+        "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
