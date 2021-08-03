@@ -34,7 +34,7 @@ namespace Play.Common.MongoDB
             services.AddSingleton<IRepository<T>>(serviceProvider =>
             {
                 var database = serviceProvider.GetService<IMongoDatabase>();
-                return new MongoRepository<T>(database, "items");
+                return new MongoRepository<T>(database, collectionName);
             });
 
             return services;
