@@ -28,13 +28,12 @@ namespace Play.Inventory.Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddMongo()
                     .AddMongoRepository<InventoryItem>("inventoryitems")
                     .AddMongoRepository<CatalogItem>("catalogitems")
                     .AddMassTransitWithRabbitMq();
 
-            AddCatalogClient(services);
+            //AddCatalogClient(services);
 
             services.AddControllers(options =>
             {
